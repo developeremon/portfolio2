@@ -1,0 +1,344 @@
+/*
+*
+* Author: Emon Khan
+* Author URI: https://facebook.com/emonkhan2020
+* Version: 1.0.0
+* Description: This is personal portfolio site.
+*
+*/
+
+
+/*=== Google font ===*/
+    /* Logo font */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+
+
+
+
+
+
+/*=== Reset CSS ===*/
+*{
+    margin: 0;
+    padding: 0
+}
+body{
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none
+}
+a, a:hover, a:active, a:link{
+    text-decoration: none;
+}
+
+
+/*=== Reuseable Component ===*/
+.custom-bg{
+    background: #F8F9FA;
+}
+.title-text{
+    color: #161C2D;
+}
+.sub-title-text{
+    font-size: 20px;
+    font-weight: 500;
+}
+.para-text{
+    color: #A2A8BA;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.section-title-start h2 {
+	font-weight: 600;
+	font-size: 35px;
+}
+.section-title-start h4 {
+	font-size: 16px;
+	font-weight: 400;
+	margin-top: 30px;
+}
+
+/*=== Hero area start ===*/
+header{
+    background: linear-gradient(#000000b4, #000000b4), url(../img/04.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.logo-text{
+    font-family: 'Lobster', cursive;
+}
+header .main-menu li{
+    display: inline-block;
+    position: relative;
+}
+header .main-menu li a{
+    display: block;
+    padding:10px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+}
+.main-menu li:hover > a, .main-menu .active, .social-menu a:hover{
+    color: #0D6EFD;
+    transition: .2s ease-in-out;
+}
+  /* dropdown menu */
+  .main-menu li ul{
+      position: absolute;
+      width: 200px;
+      top: 100%;
+      left: 0;
+      background: #F8F9FA;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      opacity: 0;
+      visibility: hidden;
+      transform: scaleY(0);
+      transform-origin: top center;
+  }
+  .main-menu li:hover ul{
+      opacity: 1;
+      visibility: visible;
+      transform: scaleY(1);
+      transition: .3s ease-in-out;
+  }
+  .main-menu li li{
+      display: block;
+      border-bottom: 1px solid #ddd;
+  }
+  .main-menu li li a{
+      display: block;
+      padding: 5px;
+      color: #000000;
+  }
+  /* social menu */
+.social-menu li{
+    display: inline-block;
+}
+.social-menu a{
+    display: block;
+    padding: 0 5px;
+    color: #fff;
+}
+.social-menu a i{
+    font-size: 18px;
+} /* header menu end */
+
+.hero-content-start .container{
+    padding: 75px 0 160px;
+}
+.hero-content-start img{
+    width: 120px;
+    margin-bottom: 25px;
+    border: 5px solid #fff;
+}
+.hero-content-start h1{
+    font-weight: 700;
+}
+.hero-content-start h4{
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+/*=== Hero area End ===*/
+
+/*=== Service area start ===*/
+.about-area-start {
+	position: relative;
+	top: -95px;
+	background: #fff;
+	padding: 15px;
+	border-radius: 5px;
+}
+.about-area-start .card {
+    background: #F7F7F7;
+    height: 180px;
+}
+.about-area-start h2{
+    font-size: 20px;
+}
+.about-area-start ul li{
+    padding: 4px 0;
+}
+.about-area-start ul li strong{
+    font-weight: 600;
+}
+.about-area-start p{
+    font-size: 16px;
+}
+.about-area-start h1{
+    font-size: 30px;
+} 
+.about-area-start h3{
+    color: #161C2D;
+}/* about area end */
+
+.service-area-start .section-title-start{
+    margin-top: -40px;
+}
+.service-item {
+	box-shadow: 2px 2px 8px -2px #777E93;
+	border-radius: 5px;
+}
+.service-item .card{ 
+    padding: 10px;
+}
+.service-item .service-logo{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.service-item h2 {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 44px;
+}
+.service-item p{
+    font-size: 16px;
+}
+/*=== Service area end ===*/
+
+/*=== Work area start ===*/
+.work-content-left .para-text{
+    margin: 20px 0;
+}
+.work-content-left .btn{
+    margin-top: 13px;
+}
+.experience{
+    position: relative;
+}
+.experience .card {
+	padding: 0 10px 0 100px;
+	border: 1px dashed #c4baba !important;
+	border-radius: 125px 0 0 0;
+}
+
+.experience small{
+    display: block;
+    margin-bottom: 10px;
+}
+.experience .btn{
+    background: #EBF5FF;
+    border: none;
+    color: #0074E8;
+}
+.experience p{
+    margin-bottom: 0;
+}
+.experience .experience-target {
+	position: absolute;
+	left: 33px;
+	bottom: -25px;
+	width: 50px;
+	height: 50px;
+}
+.experience .experience-target i {
+	background: #F0F0FE;
+	display: block;
+    padding: 0 11px;
+	border-radius: 25px;
+    font-size: 30px;
+    line-height: 50px;
+    
+}
+    /* Psudo selection */
+.experience:nth-child(even) .card{
+    border-radius: 0 0 125px 0;
+    padding: 0 100px 0 10px;
+}
+.experience:nth-child(even) .experience-target{
+    top: -23px;
+    left: 84%;
+}
+/*=== Work area End ===*/
+
+
+/*=== Counter area start ===*/
+.counter-area-start{
+    background: linear-gradient(#000000e3, #000000e3), url(../img/sectionbg.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/*=== Counter area end ===*/
+
+
+/*=== Skill area start ===*/
+.skill-area-start .skill-item{
+    
+}
+.skill-area-start .skill-item p{
+    width: 70px;
+    height: 70px;
+    background: #fff;
+    line-height: 80px;
+    box-shadow: 2px 2px 8px -2px #777E93;
+    border-radius: 50%;
+    position: relative;
+}
+.skill-area-start .skill-item p i{
+    color: #563D7C;
+}
+.skill-area-start .skill-item span{
+    position: absolute;
+    right: -20px;
+    top: -8px;
+    background: #EAF4FE;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 16px;
+    color: #4497FF;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+.skill-item .fa-node-js{
+    color: #A0D16B !important;
+}
+/*=== Skill area end ===*/
+
+/*=== Testimonial area start ===*/
+.single-testimonial img{
+    width: 80px !important;
+    height: 80px !important;
+    display: block;
+    margin: 0 auto;
+}
+/*=== Testimonial area end ===*/
+
+
+
+/*=== Contact area start ===*/
+.contact-item .card{
+    box-shadow: 2px 2px 8px -2px #777E93;
+}
+.contact-form-start #msg{
+    height: 161px;
+}
+/*=== Contact area end ===*/
+
+
+/*=== Portfolio area start ===*/
+.portfolio img:hover{
+    opacity: .8;
+    transition: .5s ease-in-out;
+    transform: scale(1.1);
+}
+
+
+/*=== Portfolio area End ===*/
+
+
+
+/*=== Footer area start ===*/
+
+/*=== Footer area End ===*/
